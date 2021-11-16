@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            font-family: "Rubik", sans-serif;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1100px;
+        }
+
+        header {
+            height: 100vh;
+            position: relative;
+
+            background-image: url(images/hero-image.jpg);
+            background-repeat: no-repeat;
+            background-size: 1;
+            background-size: contain;
+            background-position: right;
+            background-color: #e8e8e8;
+        }
+
+        nav {
+            font-size: 18px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 32px;
+        }
+
+        .header-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            /* In relation with the element size */
+            transform: translate(-70%, -50%);
+        }
+
+        .header-container-inner {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 44px;
+            margin-bottom: 24px;
+            line-height: 1.05;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 32px;
+        }
+
+        .btn:visited,
+        .btn:link {
+            font-size: 16px;
+            font-weight: 600;
+            background-color: #f03e3e;
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 6px;
+        }
+
+        h2 {
+            font-size: 36px;
+            margin-bottom: 32px;
+        }
+
+        section {
+            padding: 96px 0;
+        }
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="container">
+            <div>LOGO</div>
+            <div>Navigation</div>
+        </nav>
+
+        <div class="header-container">
+            <div class="header-container-inner">
+
+                <h1>Healthy fresh meat delivered to your doorsteps.</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nam quia nisi nemo, laudantium eum
+                    vero
+                    unde atque exercitationem.</p>
+                <a href="#" class="btn">Start eating well</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Secondary Section</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem ducimus, debitis quae, velit in
+                facere nihil laborum sint molestiae doloribus nisi est praesentium id vitae placeat atque illum officia.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum eligendi hic nihil mollitia? Quaerat
+                quos cum totam velit, id ipsa nihil excepturi inventore, sint voluptatibus, nobis culpa laboriosam minus
+                voluptates! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore eveniet ullam ad laboriosam
+                corporis dicta tempore rem doloremque alias praesentium accusantium, suscipit, consequuntur officia
+                pariatur tempora quidem aliquam quaerat voluptate.</p>
+        </div>
+    </section>
 </body>
+
 </html>
