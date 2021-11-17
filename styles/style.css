@@ -1,19 +1,60 @@
+/* 
+---- 01 TYPOGRAPHY SYSTEM
+
+--Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+
+--Font weights
+400 / 600 / 700
+
+--Line heights
+Default: 1
+
+
+---- 02 COLORS
+
+--Primary: #f03e3e
+--Secondary: #e8e8e8
+--Tints: #fdf2e9
+--Shades: #a82b2b
+--Accents:
+--Greys: #495057, #333, #555
+
+---- 03 SHADOWS
+
+---- 04 BORDER-RADIUS
+
+----05 WHITESPACE
+
+--Spacing System(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
-  font-family: "Rubik", sans-serif;
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /*  Percentage of user's browser font-size setting */
+  font-size: 62.5%;
 }
 
 body {
-  margin: 0;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1100px;
-}
-
-header {
+.section-hero {
   height: 100vh;
-  position: relative;
+  margin: 0 auto;
+  padding: 12.8rem;
+  padding-top: 17rem;
 
   background-image: url(../images/hero-image.jpg);
   background-repeat: no-repeat;
@@ -23,57 +64,47 @@ header {
   background-color: #e8e8e8;
 }
 
-nav {
-  font-size: 18px;
+.hero {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 12.8rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
   font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 32px;
-}
-
-.header-container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-
-  /* In relation with the element size */
-  transform: translate(-70%, -50%);
-}
-
-.header-container-inner {
-  width: 50%;
-}
-
-h1 {
-  font-size: 44px;
-  margin-bottom: 24px;
   line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5;
+  margin-bottom: 3.2rem;
 }
 
-p {
-  font-size: 18px;
+.hero-description {
+  font-size: 2rem;
   line-height: 1.6;
-  margin-bottom: 32px;
+  margin-bottom: 4.8rem;
   color: #495057;
 }
 
-.btn:visited,
-.btn:link {
-  font-size: 16px;
-  font-weight: 600;
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 2rem;
+  padding: 1.4rem 2.8rem;
+  text-decoration: none;
+  border-radius: 0.9rem;
   background-color: #f03e3e;
   color: #e8e8e8;
-  text-decoration: none;
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 6px;
+  font-weight: 500;
+
+  transition: all 0.3s;
 }
 
-h2 {
-  font-size: 36px;
-  margin-bottom: 32px;
-}
-
-section {
-  padding: 96px 0;
+.btn:hover,
+.btn:active {
+  background-color: #a82b2b;
 }
