@@ -65,6 +65,21 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.container {
+  max-width: 114rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -163,7 +178,7 @@ body {
   background-repeat: no-repeat;
   background-size: 1;
   background-size: contain;
-  background-position: 85%;
+  background-position: right;
   background-color: #e8e8e8;
 }
 
@@ -182,4 +197,60 @@ body {
   line-height: 1.6;
   margin-bottom: 4.8rem;
   color: #495057;
+}
+
+/****************************************/
+/* CARDS SECTION */
+/****************************************/
+
+.section-cards {
+  padding: 8rem 0;
+  padding-bottom: 4.8rem;
+}
+.feature-container {
+  max-width: 100rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.feature-heading {
+  font-size: 3.6rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+
+.feature-icon {
+  stroke: #f03e3e;
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+
+.feature-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.feature-text {
+  font-size: 1.4rem;
+  color: #495057;
+  line-height: 1.8;
+  text-align: center;
 }
