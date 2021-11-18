@@ -74,13 +74,12 @@ Default: 9px
   color: #333;
   font-weight: 600;
   font-size: 1.8rem;
-
-  transition: all 0.3s;
 }
 
 .main-nav-link:hover,
 .main-nav-link:active {
-  color: #a82b2b;
+  color: #f03e3e;
+  border-bottom: solid 3px #f03e3e;
 }
 
 .main-nav-link.nav-cta:link,
@@ -89,13 +88,12 @@ Default: 9px
   border-radius: 9px;
   background-color: #f03e3e;
   color: #e8e8e8;
-
-  transition: all 0.3s;
 }
 
 .main-nav-link.nav-cta:hover,
 .main-nav-link.nav-cta:active {
   background-color: #a82b2b;
+  border: none;
 }
 
 /****************************************/
@@ -207,12 +205,6 @@ Default: 9px
   padding: 3.2rem;
   border-radius: 11px;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
-  transition: all 0.4s;
-}
-
-.feature:hover {
-  transform: translateY(-1.2rem);
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon {
@@ -241,13 +233,34 @@ Default: 9px
 /* PRODUCTS SECTION */
 /****************************************/
 
-.products {
-  align-items: center;
-  justify-items: center;
-}
-
 .section-products {
   padding: 4.8rem 0;
+}
+
+.sub-heading {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 4.8rem;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+  overflow: hidden;
+  border-radius: 9px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+  transition: all 0.4s;
+}
+
+.product-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
 }
 
 .product-image {
@@ -255,6 +268,38 @@ Default: 9px
   height: 18.7rem;
 }
 
-.size-img {
-  width: auto;
+.product-info {
+  width: 100%;
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.product-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #555;
+}
+
+.product-price {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #d83838;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  font-size: 1.6rem;
+  color: #e8e8e8;
+  background-color: #d83838;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background-color: #a82b2b;
 }
