@@ -9,18 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
     <header class="header">
-        <span class="logo">FrozenDish</span>
+        <a href="#" class="header-logo">
+            <span class="logo">FrozenDish</span>
+        </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">Section 1</a></li>
-                <li><a class="main-nav-link" href="#">Section 2</a></li>
-                <li><a class="main-nav-link" href="#">Section 3</a></li>
-                <li><a class="main-nav-link" href="#">Section 4</a></li>
+                <li><a class="main-nav-link" href="#">Home</a></li>
+                <li><a class="main-nav-link" href="#">Products</a></li>
+                <li><a class="main-nav-link" href="#">About Us</a></li>
                 <li><a class="main-nav-link nav-cta" href="#">Contact us</a></li>
             </ul>
         </nav>
@@ -92,7 +94,179 @@
                 </div>
             </div>
         </section>
+
+        <section class="section-products">
+            <div class="container">
+                <span class="sub-heading">Our products:</span>
+                <div class="products grid grid--3-cols">
+                    <div class="product-card">
+                        <img src="images/products/breast.jpg" alt="chicken breast" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Chicken Breast</p>
+                            <p class="product-price">₹270 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/drumsticks.jpg" alt="chicken drumsticks" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Chicken Drumsticks</p>
+                            <p class="product-price">₹230 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/whole.jpg" alt="whole chicken" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Whole Chicken</p>
+                            <p class="product-price">₹160 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/loin.jpg" alt="beef loin" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Beef Tenderloin</p>
+                            <p class="product-price">₹350 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/shortloin.jpg" alt="beef short loin" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Beef Shortloin</p>
+                            <p class="product-price">₹330 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/currycut.jpg" alt="beef curry cut" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Beef Currycut</p>
+                            <p class="product-price">₹300 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/minced.jpg" alt="beef curry cut" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Beef Minced</p>
+                            <p class="product-price">₹400 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/patty.jpg" alt="beef curry cut" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">Beef Burger Patty</p>
+                            <p class="product-price">₹600 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <img src="images/products/fries.jpg" alt="beef curry cut" class="product-image">
+                        <div class="product-info">
+                            <p class="product-title">French Fries</p>
+                            <p class="product-price">₹200 per Kg</p>
+                            <a href="#" class="btn-primary">More info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contact-us">
+            <div class="container">
+                <div class="contact-us">
+                    <div class="contact-us-forms">
+                        <div class="contact-us-text">
+                            <h2 class="countact-us-heading sub-heading">Want to hear more from us?</h2>
+                            <!-- <p class="countact-us-sub-heading">Just type in...</p> -->
+                        </div>
+                        <form action="#" class="contact-us-form">
+                            <div class="form-element">
+                                <label for="text">Full Name</label>
+                                <input type="text" name="username" id="username" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-element">
+                                <label for="email">Email address</label>
+                                <input type="email" name="email" id="email" placeholder="something@example.com"
+                                    required>
+                            </div>
+                            <div class="form-element">
+                                <label for="content">Content</label>
+                                <textarea name="content" id="content" cols="30" rows="7" required></textarea>
+                            </div>
+                            <button class="btn form-btn">Send</button>
+                        </form>
+                    </div>
+                    <div class="contact-us-img" role="img" aria-label="butcher cutting meat"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container grid grid--footer">
+                <div class="logo-col">
+                    <a href="#" class="footer-logo">
+                        <span class="logo">FrozenDish</span>
+                    </a>
+                    <div class="logo-container">
+                        <h2 class="heading-powered-by">Powered by</h2>
+                        <img src="/images/logo-DC.jpg" alt="Daily Cuisine logo" class="logo-powered-by">
+                    </div>
+                    <p class="copyright">Copyright &copy; 2021 by Daily Cuisine. <br />All rights reserved</p>
+                </div>
+
+                <div class="address-col">
+                    <p class="footer-heading">Contact us</p>
+                    <address class="contacts">
+                        <p class="address">
+                            Pulari Road, Vadayampady PO Choondi, Kochi, Kerala, India 682308
+                        </p>
+                        <a class="footer-link" href="tel:+918089560070">+918089560070</a><br />
+                        <a class="footer-link" href="mailto:info@dailycuisine.in">info@dailycuisine.in</a>
+                    </address>
+                    <ul class="social-links">
+                        <li><a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li><a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li><a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav1-col">
+                    <p class="footer-heading">Customer care</p>
+                    <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">Products Details</a></li>
+                        <li><a class="footer-link" href="#">Fresh or Frozen</a></li>
+                        <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+                        <li><a class="footer-link" href="#">Wholesale Customers</a></li>
+                    </ul>
+                </div>
+                <div class="nav2-col">
+                    <p class="footer-heading">Company</p>
+                    <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">News</a></li>
+                        <li><a class="footer-link" href="#">Company History</a></li>
+                        <li><a class="footer-link" href="#">Meet theOwners</a></li>
+                        <li><a class="footer-link" href="#">Our Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
