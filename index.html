@@ -15,7 +15,9 @@
 
 <body>
     <header class="header">
-        <span class="logo">FrozenDish</span>
+        <a href="#" class="header-logo">
+            <span class="logo">FrozenDish</span>
+        </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#">Home</a></li>
@@ -45,15 +47,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="section-powered-by">
-            <div class="container">
-                <h2 class="heading-powered-by">Powered by</h2>
-                <div class="logos-powered-by">
-                    <img src="/images/logo-DC.jpg" alt="Daily Cuisine logo" class="logo-powered-by">
-                </div>
-            </div>
-        </section> -->
 
         <section class="section-cards">
             <div class="feature-container">
@@ -213,9 +206,67 @@
         </section>
 
         <footer class="footer">
-            <div class="container grid grid--4-cols"></div>
+            <div class="container grid grid--footer">
+                <div class="logo-col">
+                    <a href="#" class="footer-logo">
+                        <span class="logo">FrozenDish</span>
+                    </a>
+                    <div class="logo-container">
+                        <h2 class="heading-powered-by">Powered by</h2>
+                        <img src="/images/logo-DC.jpg" alt="Daily Cuisine logo" class="logo-powered-by">
+                    </div>
+                    <p class="copyright">Copyright &copy; 2021 by Daily Cuisine. <br />All rights reserved</p>
+                </div>
+
+                <div class="address-col">
+                    <p class="footer-heading">Contact us</p>
+                    <address class="contacts">
+                        <p class="address">
+                            Pulari Road, Vadayampady PO Choondi, Kochi, Kerala, India 682308
+                        </p>
+                        <a class="footer-link" href="tel:+918089560070">+918089560070</a><br />
+                        <a class="footer-link" href="mailto:info@dailycuisine.in">info@dailycuisine.in</a>
+                    </address>
+                    <ul class="social-links">
+                        <li><a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+                        <li><a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+                        <li><a class="footer-link" href="#">
+                                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav1-col">
+                    <p class="footer-heading">Customer care</p>
+                    <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">Products Details</a></li>
+                        <li><a class="footer-link" href="#">Fresh or Frozen</a></li>
+                        <li><a class="footer-link" href="#">Terms & Conditions</a></li>
+                        <li><a class="footer-link" href="#">Wholesale Customers</a></li>
+                    </ul>
+                </div>
+                <div class="nav2-col">
+                    <p class="footer-heading">Company</p>
+                    <ul class="footer-nav">
+                        <li><a class="footer-link" href="#">News</a></li>
+                        <li><a class="footer-link" href="#">Company History</a></li>
+                        <li><a class="footer-link" href="#">Meet theOwners</a></li>
+                        <li><a class="footer-link" href="#">Our Policy</a></li>
+                    </ul>
+                </div>
+            </div>
         </footer>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
