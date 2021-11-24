@@ -56,15 +56,26 @@ const sectionHeroEl = document.querySelector(".section-hero")
 
 const observer = new IntersectionObserver(function (entries) {
   const ent = entries[0];
+  const headerEl = document.querySelector('.sticky');
+  const logoEl = document.querySelector('.logo');
+  const navHomeEl = document.querySelector('.link-home');
+  const navProductsEl = document.querySelector('.link-products');
+  const navAboutEl = document.querySelector('.link-about');
   if (!ent.isIntersecting) {
-    const headerEl = document.querySelector('.sticky');
     headerEl.style.backgroundColor = "#fff";
     headerEl.style.boxShadow = "0 1.2rem 3.2rem rgba(0, 0, 0, 0.3)";
+    logoEl.style.color = "#333";
+    navHomeEl.style.color = "#333";
+    navProductsEl.style.color = "#333";
+    navAboutEl.style.color = "#333";
   }
   if (ent.isIntersecting) {
-    const headerEl = document.querySelector('.sticky');
-    headerEl.style.backgroundColor = "#e8e8e8";
+    headerEl.style.backgroundColor = "rgba(0, 0, 0, 0.247)";
     headerEl.style.boxShadow = "none";
+    logoEl.style.color = "#fff";
+    navHomeEl.style.color = "#fff";
+    navProductsEl.style.color = "#fff";
+    navAboutEl.style.color = "#fff";
   }
 }, {
   root: null,

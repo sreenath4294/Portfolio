@@ -41,7 +41,7 @@ Default: 9px
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #e8e8e8;
+  /* background-color: rgba(0, 0, 0, 0.247); */
 
   height: 8rem;
   padding: 0 4.8rem;
@@ -54,7 +54,7 @@ Default: 9px
 
 .logo {
   font-size: 2.8rem;
-  color: #333;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -130,7 +130,7 @@ Default: 9px
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  background-color: #e8e8e8;
+  /* background-color: rgba(255, 255, 255, 0); */
   z-index: 99999;
   box-shadow: none;
 }
@@ -140,16 +140,19 @@ Default: 9px
 /****************************************/
 
 .section-hero {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0 auto;
   padding: 9.8rem 0;
 
-  background-image: url(../images/hero-image.jpg);
-  background-repeat: no-repeat;
-  background-size: 1;
-  background-size: contain;
-  background-position: right;
-  background-color: #e8e8e8;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)),
+    url(../images/hero.jpg);
+  animation: mymove 9s infinite;
+}
+
+@keyframes mymove {
+  50% {
+    background-position: center;
+  }
 }
 
 .hero {
@@ -167,7 +170,7 @@ Default: 9px
   font-size: 2rem;
   line-height: 1.6;
   margin-bottom: 4.8rem;
-  color: #495057;
+  color: #a8a8a8;
 }
 
 /****************************************/
@@ -423,6 +426,12 @@ Default: 9px
 .footer-logo {
   text-decoration: none;
   color: #333;
+}
+
+.logo-2 {
+  font-size: 2.8rem;
+  color: #333;
+  font-weight: 700;
 }
 
 .heading-powered-by {
