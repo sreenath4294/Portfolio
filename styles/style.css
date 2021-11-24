@@ -101,6 +101,8 @@ Default: 9px
   border: none;
 }
 
+/* Mobile navigation */
+
 .btn-mobile-nav {
   border: none;
   background: none;
@@ -119,12 +121,26 @@ Default: 9px
   display: none;
 }
 
+/* Sticky navigation */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #e8e8e8;
+  z-index: 99999;
+  box-shadow: none;
+}
+
 /****************************************/
 /* HERO SECTION */
 /****************************************/
 
 .section-hero {
-  height: 92vh;
+  height: 100vh;
   margin: 0 auto;
   padding: 9.8rem 0;
 
@@ -139,7 +155,7 @@ Default: 9px
 .hero {
   max-width: 130rem;
   margin: 9.6rem auto;
-  padding: 0 3.2rem;
+  padding: 8rem 3.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;

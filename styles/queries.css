@@ -43,10 +43,6 @@ Default: 9px
     max-width: 120rem;
   }
 
-  .section-hero {
-    height: 88vh;
-  }
-
   .hero {
     max-width: 114rem;
     margin: 0 auto;
@@ -58,6 +54,10 @@ Default: 9px
 
   .hero-description {
     font-size: 1.8rem;
+  }
+
+  .sticky {
+    height: 6rem;
   }
 }
 
@@ -81,7 +81,6 @@ Default: 9px
 
 @media (max-width: 57em) {
   .section-hero {
-    /* height: 75vh; */
     padding: 6.2rem 0;
   }
 
