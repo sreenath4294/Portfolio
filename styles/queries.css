@@ -201,6 +201,7 @@ Default: 9px
 @media (max-width: 46em) {
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {

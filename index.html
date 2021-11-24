@@ -16,6 +16,11 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/queries.css">
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+
     <title>Portfolio</title>
 </head>
 
@@ -27,9 +32,9 @@
         <nav class="main-nav">
             <ul class="main-nav-list">
                 <li><a class="main-nav-link" href="#">Home</a></li>
-                <li><a class="main-nav-link" href="#">Products</a></li>
-                <li><a class="main-nav-link" href="#">About Us</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Contact us</a></li>
+                <li><a class="main-nav-link" href="#products">Products</a></li>
+                <li><a class="main-nav-link" href="#features">About Us</a></li>
+                <li><a class="main-nav-link nav-cta" href="#contact-us">Contact us</a></li>
             </ul>
         </nav>
         <button class="btn-mobile-nav">
@@ -38,7 +43,7 @@
         </button>
     </header>
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="hero">
                 <div class="hero-text-box">
                     <h1 class="heading-primary">Healthy meat for your healthy meal</h1>
@@ -46,7 +51,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia sed quam unde odit, vero
                         dolores labore. Eos, ipsum. Id animi modi est dolores laborum sit.
                     </p>
-                    <a href="#" class="btn btn--full">Start eating well</a>
+                    <a href="#products" class="btn btn--full">Start eating well</a>
                     <!-- <a href="#" class="btn btn--outline">Learn more &darr;</a> -->
                 </div>
                 <div class="hero-image-box">
@@ -58,7 +63,7 @@
             </div>
         </section>
 
-        <section class="section-cards">
+        <section class="section-cards" id="features">
             <div class="feature-container">
                 <h1 class="feature-heading">What FrozenDish deliver?</h1>
                 <div class="grid grid--3-cols">
@@ -105,7 +110,7 @@
             </div>
         </section>
 
-        <section class="section-products">
+        <section class="section-products" id="products">
             <div class="container">
                 <span class="sub-heading">Our products:</span>
                 <div class="products grid grid--3-cols">
@@ -185,7 +190,7 @@
             </div>
         </section>
 
-        <section class="section-contact-us">
+        <section class="section-contact-us" id="contact-us">
             <div class="container">
                 <div class="contact-us">
                     <div class="contact-us-forms">
@@ -225,7 +230,8 @@
                         <h2 class="heading-powered-by">Powered by</h2>
                         <img src="/images/logo-DC.jpg" alt="Daily Cuisine logo" class="logo-powered-by">
                     </div>
-                    <p class="copyright">Copyright &copy; 2021 by Daily Cuisine. <br />All rights reserved</p>
+                    <p class="copyright">Copyright &copy; <span class="year">2021</span> by Daily Cuisine. <br />All
+                        rights reserved</p>
                 </div>
 
                 <div class="address-col">
@@ -275,10 +281,6 @@
             </div>
         </footer>
     </main>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
