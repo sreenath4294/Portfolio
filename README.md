@@ -1,2 +1,3 @@
 # Portfolio
-Portfolio website for DailyCuisine
+
+Portfolio website for Learning HTML and CSS

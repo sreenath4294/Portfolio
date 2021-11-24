@@ -4,31 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Very important for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/queries.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script defer src="js/script.js"></script>
+
+    <title>Portfolio</title>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header sticky">
         <a href="#" class="header-logo">
             <span class="logo">FrozenDish</span>
         </a>
         <nav class="main-nav">
             <ul class="main-nav-list">
-                <li><a class="main-nav-link" href="#">Home</a></li>
-                <li><a class="main-nav-link" href="#">Products</a></li>
-                <li><a class="main-nav-link" href="#">About Us</a></li>
-                <li><a class="main-nav-link nav-cta" href="#">Contact us</a></li>
+                <li><a class="main-nav-link link-home" href="#">Home</a></li>
+                <li><a class="main-nav-link link-products" href="#products">Products</a></li>
+                <li><a class="main-nav-link link-about" href="#features">About Us</a></li>
+                <li><a class="main-nav-link nav-cta" href="#contact-us">Contact us</a></li>
             </ul>
         </nav>
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+        </button>
     </header>
     <main>
-        <section class="section-hero">
+        <section class="section-hero" id="hero">
             <div class="hero">
                 <div class="hero-text-box">
                     <h1 class="heading-primary">Healthy meat for your healthy meal</h1>
@@ -36,7 +51,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia sed quam unde odit, vero
                         dolores labore. Eos, ipsum. Id animi modi est dolores laborum sit.
                     </p>
-                    <a href="#" class="btn btn--full">Start eating well</a>
+                    <a href="#products" class="btn btn--full">Start eating well</a>
                     <!-- <a href="#" class="btn btn--outline">Learn more &darr;</a> -->
                 </div>
                 <div class="hero-image-box">
@@ -48,7 +63,7 @@
             </div>
         </section>
 
-        <section class="section-cards">
+        <section class="section-cards" id="features">
             <div class="feature-container">
                 <h1 class="feature-heading">What FrozenDish deliver?</h1>
                 <div class="grid grid--3-cols">
@@ -78,7 +93,7 @@
                             We’re able to deliver you the best products for a lesser price.
                         </p>
                     </div>
-                    <div class="feature">
+                    <div class="feature feature-3">
                         <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -95,7 +110,7 @@
             </div>
         </section>
 
-        <section class="section-products">
+        <section class="section-products" id="products">
             <div class="container">
                 <span class="sub-heading">Our products:</span>
                 <div class="products grid grid--3-cols">
@@ -175,7 +190,7 @@
             </div>
         </section>
 
-        <section class="section-contact-us">
+        <section class="section-contact-us" id="contact-us">
             <div class="container">
                 <div class="contact-us">
                     <div class="contact-us-forms">
@@ -209,13 +224,14 @@
             <div class="container grid grid--footer">
                 <div class="logo-col">
                     <a href="#" class="footer-logo">
-                        <span class="logo">FrozenDish</span>
+                        <span class="logo-2">FrozenDish</span>
                     </a>
                     <div class="logo-container">
                         <h2 class="heading-powered-by">Powered by</h2>
                         <img src="/images/logo-DC.jpg" alt="Daily Cuisine logo" class="logo-powered-by">
                     </div>
-                    <p class="copyright">Copyright &copy; 2021 by Daily Cuisine. <br />All rights reserved</p>
+                    <p class="copyright">Copyright &copy; <span class="year">2021</span> by Daily Cuisine. <br />All
+                        rights reserved</p>
                 </div>
 
                 <div class="address-col">
@@ -242,7 +258,8 @@
                         </li>
                     </ul>
                 </div>
-                <div class="nav1-col">
+
+                <div class="nav-col">
                     <p class="footer-heading">Customer care</p>
                     <ul class="footer-nav">
                         <li><a class="footer-link" href="#">Products Details</a></li>
@@ -251,7 +268,7 @@
                         <li><a class="footer-link" href="#">Wholesale Customers</a></li>
                     </ul>
                 </div>
-                <div class="nav2-col">
+                <div class="nav-col">
                     <p class="footer-heading">Company</p>
                     <ul class="footer-nav">
                         <li><a class="footer-link" href="#">News</a></li>
@@ -260,13 +277,10 @@
                         <li><a class="footer-link" href="#">Our Policy</a></li>
                     </ul>
                 </div>
+
             </div>
         </footer>
     </main>
-
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
