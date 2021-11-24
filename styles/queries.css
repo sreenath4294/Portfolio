@@ -114,9 +114,6 @@ Default: 9px
     font-size: 1.2rem;
   }
 
-  .product-image {
-    height: 16rem;
-  }
   .contact-us-form {
     padding: 3.2rem;
   }
@@ -159,10 +156,6 @@ Default: 9px
 
   .product-price {
     font-size: 1.2rem;
-  }
-
-  .product-image {
-    height: 14rem;
   }
 
   .footer {
@@ -271,20 +264,6 @@ Default: 9px
     grid-column: 1 / -1;
     justify-self: center;
   }
-
-  .product-image {
-    height: 20rem;
-  }
-}
-
-/****************************************/
-/* BELOW 592PX (MOBILES) */
-/****************************************/
-
-@media (max-width: 38em) {
-  .product-image {
-    height: 16rem;
-  }
 }
 
 /****************************************/
@@ -296,17 +275,12 @@ Default: 9px
     grid-template-columns: 1fr;
   }
 
-  .product-image {
-    height: 32rem;
-  }
-
   .heading-primary {
     font-size: 3.6rem;
   }
 
   .hero-description {
     font-size: 1.6rem;
-    color: #495057;
   }
 
   .feature-heading {
@@ -346,25 +320,5 @@ Default: 9px
   .contact-us-img {
     height: 36rem;
     grid-row: 1;
-  }
-}
-
-/****************************************/
-/* BELOW 416PX (MOBILES) */
-/****************************************/
-
-@media (max-width: 26em) {
-  .product-image {
-    height: 26rem;
-  }
-}
-
-/****************************************/
-/* BELOW 368PX (MOBILES) */
-/****************************************/
-
-@media (max-width: 23em) {
-  .product-image {
-    height: 20rem;
   }
 }
