@@ -204,7 +204,7 @@ Default: 9px
   }
 
   .main-nav {
-    background-color: rgba(255, 255, 255, 0.911);
+    background-color: rgba(0, 0, 0, 0.911);
     position: absolute;
     top: 0;
     left: 0;
